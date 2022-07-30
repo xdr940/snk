@@ -1,8 +1,14 @@
 # spaceflow
-A emulation\simulation framework of space network
+A emulation\simulation framework of space network.
 ![](./fig/framework.png)
 
-This simu/emulation framework contains three parts:
+
+*spaceflow* is a simu/emulation framework that enables the simulation of space, such as satellites, vehicles, interstellar links, etc., as well as the networking emulation among above entities. This framework enables the development of new protocols, architectures and managements in space networks.
+
+
+
+
+This framework contains three parts:
 - [scenario](https://github.com/xdr940/scenario)
 - mininet-space 
 - [visualizer](https://github.com/xdr940/visualizer)
