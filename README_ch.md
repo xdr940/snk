@@ -1,11 +1,11 @@
-# spaceflow
+# Space Networking Kit
 
 [English](README.md) | 中文文档
 
 空间网络的仿真\模拟框架。
 
 
-*spaceflow* 是一个仿真/模拟框架，可以对空间进行仿真，例如巨星座、车辆、飞行器、舰船、星间链路等，以及上述实体之间的网络模拟，实现iperf、ping的测量。该框架支持在空间网络中开发新的设施架构、协议架构和管理架构。该框架包含三个部分：*Scenario*、*mininet-space* 和*Visualizer*，现逐个介绍
+*snk* 是一个仿真/模拟框架，可以对空间进行仿真，例如巨星座、车辆、飞行器、舰船、星间链路等，以及上述实体之间的网络模拟，实现iperf、ping的测量。该框架支持在空间网络中开发新的设施架构、协议架构和管理架构。该框架包含三个部分：*Scenario*、*mininet-space* 和*Visualizer*，现逐个介绍
 
 ![](./fig/framework.png)
 
@@ -70,11 +70,11 @@
 
 ## cite
 ```tex
-@misc{spaceflow,
+@misc{snk,
 author={Wang Xiangtong},
-title={SpaceFlow},
+title={Space Networking Kit},
 year = {2022},
-howpublished={\url{https://github.com/xdr940/spaceflow}}
+howpublished={\url{https://github.com/xdr940/snk}}
 }
 ```
 
