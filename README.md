@@ -1,12 +1,12 @@
-# spaceflow
+# Space Networking Kit
 
 English | [中文文档](README_ch.md)
 
-A emulation\simulation framework of space network.
+A emulation\simulation framework of space networking.
 
 
 
-*spaceflow* is a simu/emulation framework that enables the simulation of space, such as satellites, vehicles, interstellar links, etc., as well as the networking emulation among above entities. This framework enables the development of new protocols, architectures and managements in space networks.
+*SNK* is a simu/emulation framework that enables the simulation of space, such as satellites, vehicles, interstellar links, etc., as well as the networking emulation among above entities. This framework enables the development of new protocols, architectures and managements in space networks.
 ![](./fig/framework.png)
 
 
