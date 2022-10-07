@@ -87,3 +87,19 @@ howpublished={\url{https://github.com/xdr940/snk}}
 ![](./fig/ISL.png)
 
 ![](./fig/FWD.png)
+
+# `TODOs`
+
+网络模拟单元难度太大，空间仿真部分暂时不整了，其暂未完成工作如下
+
+### 1. 开发、重构
+  - [ ] **异步交互模式开发$(\star\star\star)$:** 参考onos
+ 
+  - [ ] **考虑tISL的连通性$(\star\star)$：** 实现正交卫星可达性(reachability)分析
+  - [ ] **Access锥形方程$(\star\star)$：** 目前access使用的方程是$F_1 = \|p_1 - p_2\|-L \leq 0$, 后面加入圆锥方程以及更复杂的sensor方程，以实现椭圆轨道球层的层间链路（lISL）
+  - [ ] **Procedures整合$(\star)$：** 把exp1,exp2等单独放一坨，目前只有replay
+  - [ ] **集成到mininet/CLI$(\star\star\star)$**
+
+### 2. 加速、优化
+  - [ ] **ECI坐标下临时链路过多$(\star\star)$** 
+  - [ ] **tFWD$(\star\star)$:** 每个ISL配有两个方向的FWD，entities的数量与时间无关，但如果tISL采用类似做法，则仿真时间比较长的时候entities会非常多，匹配的tFWD也会很多，考虑如何处理
