@@ -60,14 +60,14 @@ Construction sequence.
 
 ## cite
 ```tex
-@misc{spaceflow,
+@misc{snk,
 
 author={Wang Xiangtong},
 
-title={SpaceFlow},
+title={Space Networking Kit},
 year = {2022},
 
-howpublished={\url{https://github.com/xdr940/spaceflow}}
+howpublished={\url{https://github.com/xdr940/snk}}
 
 }
 
