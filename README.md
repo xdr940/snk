@@ -26,14 +26,14 @@ This framework contains three parts:
 
 
 
-# SNK scenarios
+# scenario
 
 ![](./fig/sce_abs.png)
 
 ![](./fig/har2lon.png)
 
 
-# evaluations
+# evaluation
 ![](./fig/cities.png)
 
 ![](./fig/loads_thp.png)
