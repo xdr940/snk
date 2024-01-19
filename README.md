@@ -11,8 +11,8 @@ A simulation\emulation system for space networking.
 This framework contains:
 - [snk-scenario](https://github.com/xdr940/snk-scenario)
 - [snk-visualizer](https://github.com/xdr940/snk-visualizer)
+- [snk-server](https://github.com/xdr940/snk-server)
 - [snk-analyzer](https://github.com/xdr940/snk-analyzer)
-- mininet-snk 
 
 
 # SNK workflow
@@ -38,3 +38,24 @@ This framework contains:
 
 ![](./fig/loads_thp.png)
 ![](./fig/stretch_evo.png)
+
+
+citation
+
+```
+@inproceedings{snk,
+title={Space Networking Kit: A Novel Simulation Platform for Emerging LEO Mega-constellations},
+author={Xiangtong, Wang and Xiaodong, Han and Menglong, Yang and Songchen, Han and Wei Li}
+booktitle={IEEE International Conference on Communications 2024},
+year={2024}
+}
+
+@misc{snk,
+title={Space Networking Kit: A Novel Simulation Platform for Emerging LEO Mega-constellations},
+author={Xiangtong Wang and Xiaodong Han and Menglong Yang and Songchen Han and Wei Li},
+year={2024},
+eprint={2401.07511},
+archivePrefix={arXiv},
+primaryClass={cs.NI}
+}
+```
