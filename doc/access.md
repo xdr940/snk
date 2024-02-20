@@ -73,7 +73,8 @@ access_stamps = acc.get_access_stamps()
 
 - step.1 
 ```bash
-/-full time-/
+     |------T_full----|
+	 	|--T_xsl--|
 src: o---o---o---o---o
 tgt: 
 ```
@@ -82,7 +83,8 @@ tgt:
 
 - step.2 
 ```bash
-     /---full time----/
+     |------T_full----|
+	 	|--T_xsl--|
 src: o---o---o---o---o
 tgt: o #load gs
 tgt: o---o---o---o---o #load mses
@@ -91,8 +93,44 @@ tgt: o---o---o---o---o #load mses
 - step.3 #range_log
 
 ```bash
-     /---full time----/
+     /------T_full----/
+	 	/--T_xsl--/
 src: ooooooooooooooooo
 tgt: ooooooooooooooooo #range_log_gs
 tgt: ooooooooooooooooo #range_log_ms
 ```
+
+## updated version
+
+1.API code
+
+```python
+
+acc = Accessv2(
+                src_start_time=sce_start_time,
+                src_end_time=sce_end_time,
+                tgt_start_time=gsl_start_time,
+                tgt_end_time=gsl_end_time,
+                time_step=time_step,
+                borderDistance=layer_radius/np.cos(np.deg2rad(layer_steering_angle)))
+
+
+            acc.load_srcNodes(srcs=sats)
+            acc.load_tgtNodes(tgts=gses)
+            acc.caculation()
+            access_stamps = acc.get_access_stamps()
+```
+
+- step1
+
+```bash
+src_start_time										src_end_time
+     |------------------T_full------------------------|
+	 			tgt_start_time			tgt_end_time
+	 	           |-----------T_xsl----|
+src: ...o---o---o---o.....
+tgt: 
+
+```
+先将时间戳换算，超时的排除.
+目前就光把gsl的重写了，用的v2，剩下的先不考虑了。
