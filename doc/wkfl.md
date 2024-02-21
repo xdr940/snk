@@ -13,22 +13,22 @@ snk通过snk-scenario创建空间网络场景。
 
 ## 场景载入
 
+1. **step1**
 在config.yaml文件中，有场景生成路径，创建后会生成一个文件夹，里面就是场景所需的文件。
 `dump_path: "/home/roit/datasets/cesiumData/XZL" `
 
-然后，在snk-visualizer 的config.yaml文件中，修改为相同的路径（图中（3）Load）
-
+2. **step2**
+在snk-visualizer 的config.yaml文件中，修改为相同的路径（图中（3）Load）
 `base:"../data/XZL/"`
-
+所以，不同的场景比较需要修改为各自不同的路径。
 注意，已经通过软连接 连接了 /home/roit/datasets/cesiumData 和snk-visualizer/data 两个文件夹。
 
-修改场景后，修改载入
-`snk-visualizer/configs/config.yaml` 中修改载入实体 
+3. **step3**
+  修改场景后，编辑
+`snk-visualizer/configs/config.yaml` 的`load_data`参数，选择性载入不同类的场景实体 ，例如仅载入卫星，链路和随遇链路编辑为：`load_data: ['sats','isls','eisls']`
 
-
-`load_data: ['sats','isls','eisls']`
-
-然后在vsc中点击右下go live，弹出系统前端，场景显示
+4. **step4**
+ 在vsc中点击右下go live，弹出系统前端，场景显示
 
 
 ## 产生实例
