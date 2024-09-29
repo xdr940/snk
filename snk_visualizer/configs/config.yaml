@@ -1,0 +1,12 @@
+
+base: "../data/new/"
+
+
+DEBUG_MODE: "normal"
+
+
+ip: "127.0.0.1"
+port: "5678"
+
+load_data: ['sats','isls']
+

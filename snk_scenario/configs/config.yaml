@@ -1,0 +1,93 @@
+# 500km 15.230674475111606;
+# 550km 15.065933778247187
+# 700km 14.589111948816067
+# 1550km  12.247043443986453
+# 1575km 12.305066862264445
+# 1000km 13.707617251982475;
+# 2000km 11.326343337319642
+
+
+
+
+
+
+root: "/home/roit/aws/aprojects/snk_scenario-rls"
+dump_path: "/home/roit/datasets/cesiumData/new"
+
+
+start_time: "2000-01-01T00:00:00"
+end_time: "2000-01-02T00:00:00"
+time_step: 100
+random_seed: 123
+
+
+multi_threading: false
+mpt_item_len: 30
+
+
+constellations:
+
+  LAYER0:
+    enable: true
+    shellNo: 0
+    num_orbits: 10
+    num_sats_per_orbit: 10
+    phase_factor: 0
+    raan_increment: false
+
+
+    seed_tle:  #generate from seed tle
+    #      seed_tle: "./Molniya_seed.txt"
+
+    sgp: #generate from sgp format
+    #      phase_diff: true
+    #      mean_motion_rev_per_day: 13.707617251982475
+    #      inclination_degree: 53
+    #      perigee_degree: 268.4266
+    #      eccentricity: 0.0000001
+
+    seed_satellite: #generate from seed satellite
+      mean_motion_rev_per_day: 15.065933778247187
+      inclination_degree: 53
+      perigee_degree: 0
+      mean_anomaly_degree: 0
+      raan: 360
+      eccentricity: 0.0000001
+
+    sat_model:
+      gltf: "/Libs/3d_models/commSat.glb"
+
+    sensor:
+      steering_angle: 46
+      height: 1000000
+      rgba: [0,10,10,0.02]
+      height_factor: 0.25
+
+
+    ISL:
+      enable: true
+      circuit: true
+      time_steps: 10
+
+      iISL:
+        full_conn_features: [1]
+        conn_features_periods: [[-1]]
+        rgba: [0,0,255,255]
+        duty_ratio: 1
+        num_periods: 24
+
+      sISL:
+        full_conn_features: [-2,-1,0]
+        conn_features_periods: [[0]]
+        rgba: [0,255,0,255]
+        duty_ratio: 1
+        num_periods: 24
+
+
+
+
+
+
+
+
+

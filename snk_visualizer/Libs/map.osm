@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.9.1 (2811173 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="90.0000000" minlon="-180.0000000" maxlat="90.0000000" maxlon="180.0000000"/>
+ <node id="269538499" visible="true" version="46" changeset="141677199" timestamp="2023-09-24T10:59:27Z" user="Olaf der Mapper" uid="20239495" lat="90.0000000" lon="0.0000000">
+  <tag k="alt_name:en" v="Geographic North Pole;Terrestrial North Pole;True North Pole"/>
+  <tag k="alt_name:it" v="Polo Nord"/>
+  <tag k="alt_name:tr" v="Kuzey Kutup Noktası"/>
+  <tag k="alt_name:vi" v="Cực Bắc"/>
+  <tag k="is_in" v="Earth"/>
+  <tag k="name" v="North Pole"/>
+  <tag k="name:af" v="Noordpool"/>
+  <tag k="name:ar" v="القطب الشمالي"/>
+  <tag k="name:ast" v="Polu Norte"/>
+  <tag k="name:ba" v="Төньяҡ ҡотоп"/>
+  <tag k="name:cs" v="Severní pól"/>
+  <tag k="name:da" v="Nordpolen"/>
+  <tag k="name:de" v="Nordpol"/>
+  <tag k="name:en" v="North Pole"/>
+  <tag k="name:eo" v="Norda poluso"/>
+  <tag k="name:es" v="Polo norte"/>
+  <tag k="name:et" v="Põhjapoolus"/>
+  <tag k="name:fi" v="Pohjoisnapa"/>
+  <tag k="name:fr" v="Pôle Nord"/>
+  <tag k="name:he" v="הקוטב הצפוני"/>
+  <tag k="name:hr" v="Sjeverni pol"/>
+  <tag k="name:ia" v="Polo Nord"/>
+  <tag k="name:io" v="Norda Polo"/>
+  <tag k="name:it" v="Polo artico"/>
+  <tag k="name:lfn" v="Polo Norde"/>
+  <tag k="name:lt" v="Šiaurės ašigalis"/>
+  <tag k="name:nl" v="Noordpool"/>
+  <tag k="name:pl" v="Biegun północny"/>
+  <tag k="name:pt" v="Polo Norte"/>
+  <tag k="name:ru" v="Се́верный по́люс"/>
+  <tag k="name:sk" v="Severný pól"/>
+  <tag k="name:sl" v="Severni tečaj"/>
+  <tag k="name:sv" v="Nordpolen"/>
+  <tag k="name:tr" v="Kuzey Kutbu"/>
+  <tag k="name:tt" v="Төньяк котып"/>
+  <tag k="name:uk" v="Північний полюс"/>
+  <tag k="name:vi" v="Bắc Cực"/>
+  <tag k="name:vo" v="Pov Nolüdik"/>
+  <tag k="name:zh" v="北极点"/>
+  <tag k="name:zh-Hans" v="北极点"/>
+  <tag k="name:zh-Hant" v="北極點"/>
+  <tag k="place" v="locality"/>
+  <tag k="population" v="0"/>
+  <tag k="source" v="local knowledge"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wikidata" v="Q934"/>
+  <tag k="wikipedia" v="en:North Pole"/>
+  <tag k="wikipedia:tr" v="Kuzey Kutbu"/>
+ </node>
+ <node id="9594507411" visible="true" version="1" changeset="118738378" timestamp="2022-03-21T14:13:13Z" user="PulisakZ" uid="9026132" lat="90.0000000" lon="-156.1593509"/>
+ <node id="10268585910" visible="true" version="1" changeset="130171414" timestamp="2022-12-16T21:47:44Z" user="cowboy_wilhelm" uid="4548381" lat="90.0000000" lon="-5.5202806"/>
+ <node id="10268585913" visible="true" version="1" changeset="130171414" timestamp="2022-12-16T21:47:44Z" user="cowboy_wilhelm" uid="4548381" lat="90.0000000" lon="-6.0827898"/>
+ <node id="10268585916" visible="true" version="1" changeset="130171414" timestamp="2022-12-16T21:47:44Z" user="cowboy_wilhelm" uid="4548381" lat="90.0000000" lon="-5.4950412"/>
+ <node id="10268585917" visible="true" version="1" changeset="130171414" timestamp="2022-12-16T21:47:44Z" user="cowboy_wilhelm" uid="4548381" lat="90.0000000" lon="-7.0490005"/>
+ <way id="1122773760" visible="true" version="1" changeset="130171414" timestamp="2022-12-16T21:47:44Z" user="cowboy_wilhelm" uid="4548381">
+  <nd ref="10268585917"/>
+  <nd ref="10268585916"/>
+  <nd ref="10268585913"/>
+  <nd ref="10268585910"/>
+  <nd ref="10268585917"/>
+ </way>
+</osm>

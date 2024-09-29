@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8" />
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <title>SNK/Visualizer</title>
+  <script src="../Cesium/Cesium.js"></script>
+  <script src="../Libs/js-yaml.js"></script>
+  <script src="../Cesium/Sandcastle/Sandcastle-header.js"></script>
+
+  <!-- <script src="/Libs/dist/cesium-sensor-volumes.js"></script> -->
+
+  <link href="../Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <style>
+    @import url(../Cesium/Widgets/shared.css);
+
+    html,
+    .wrapper {
+      position: relative;
+      float: left;
+      left: 0px;
+      width: 1200px;
+      margin-bottom: 16px;
+      background-color: #cccccc
+    }
+    body {
+      border-width: 2px;
+      padding: 2px;
+      margin: 2px;
+      font-size: 80%;
+      background-color: #cccccc;
+      padding-bottom: 10px;
+    }
+    #cesiumContainer {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .init_panel {
+      position: relative;
+      float: left;
+      top: 5px;
+      left: 5px;
+      right: 0px;
+      width: 100px;
+      height: 40px;
+    padding-top: 6px;
+
+      background-color: gray
+    }
+
+
+    .entity_show_panel {
+      position: relative;
+      float: left;
+      top: 5px;
+      left: 15px;
+      right: 10px;
+      width: 850px;
+      height: 40px;
+    padding-top: 6px;
+    font-size: 70%;
+
+      background-color: gray
+    }
+
+
+    .state_show_panel {
+      position: relative;
+      float: left;
+      top: 10px;
+      left: 5px;
+      right: 10px;
+      width: 850px;
+      height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+      background-color: gray
+    }
+ 
+ 
+ 
+
+    
+
+  </style>
+
+  <div id="cesiumContainer" class = "fullSize"></div>
+
+
+  <div class="roit_ctrl">
+
+    <div class="init_panel">
+    
+      <div class="cesium-button" id="init">INIT</div>
+      
+
+    </div>
+    
+    
+   
+
+
+
+    </div>
+
+
+
+    <div class="entity_show_panel">
+      <div class="cesium-toolbar" id="toolbar" ></div>
+     
+
+    </div>
+
+
+
+    <div class="state_show_panel">
+
+
+      <div class="cesium-button" id="label">Label</div>
+      <div class="cesium-button" id="orbit">Orbit</div>
+      <div class="cesium-button" id="sensor">Sensor</div>
+
+      
+      <!-- <div class="cesium-button" id="fwd">FWD</div> -->
+      <div class="cesium-button" id="thisLabel">ThisLab</div>
+      <div class="cesium-button" id="thisSensor">ThisSen</div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- test buttons -->
+
+
+
+
+  <script src="./common.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+  <script id="main_script" type="module" src="./main.js"></script>
+  <script id="response_script" type="module" src="./response.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
